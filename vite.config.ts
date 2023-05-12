@@ -4,11 +4,10 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/gh-pages/',
   plugins: [react()],
   resolve: {
     alias:[{find: "@", replacement: path.resolve(__dirname,"src")}]
   },
-  // base: '/gh-pages/'
+  base: '/gh-pages/'
   
 })
