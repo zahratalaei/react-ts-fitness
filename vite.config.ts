@@ -4,10 +4,11 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/finalRepo",
+  // base: "/finalRepo",
   plugins: [react()],
   resolve: {
     alias:[{find: "@", replacement: path.resolve(__dirname,"src")}]
   },
+  base: '/vite-deploy-demo/'
   
 })
